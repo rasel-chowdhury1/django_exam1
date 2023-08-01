@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}index page{% endblock title %}
 {% block content %}
-<h1>Hello World! in app</h1>
+<h1>Hello World!</h1>
 <div class="row row-cols-1 row-cols-md-3 ">
 
       {% for i in meals %}
@@ -9,8 +9,8 @@
       <div class="card">
         <img src="{{i.strMealThumb}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">{{i.idMeal}}</h5>
+          <p class="card-text">{{i.strMeal}}</p>
         </div>
       </div>
     </div>
